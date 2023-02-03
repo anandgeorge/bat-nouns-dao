@@ -31,7 +31,7 @@ const NounsIntroSection = () => {
             frameBorder="0"
             allowFullScreen
           ></iframe>
-          <small className={`${classes.videoSubtitle} text-muted`}>
+          {/* <small className={`${classes.videoSubtitle} text-muted`}>
             This video was commissioned in{' '}
             <Nav.Link as={Link} to="/vote/113">
               Prop 113
@@ -41,7 +41,7 @@ const NounsIntroSection = () => {
               Prop 190
             </Nav.Link>
             .
-          </small>
+          </small> */}
         </Col>
       </Section>
       <Section fullWidth={false} className={classes.iosSection}>

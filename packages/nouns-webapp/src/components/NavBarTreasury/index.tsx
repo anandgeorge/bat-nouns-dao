@@ -43,7 +43,8 @@ const NavBarTreasury: React.FC<NavBarTreasuryProps> = props => {
           >
             <Trans>Treasury</Trans>
           </div>
-          <div className={classes.treasuryBalance}>Ξ {i18n.number(Number(treasuryBalance))}</div>
+          {/* <div className={classes.treasuryBalance}>Ξ {i18n.number(Number(treasuryBalance))}</div> */}
+          <div className={classes.treasuryBalance}>Ξ {i18n.number(Number("100"))}</div>
         </div>
       </div>
     </div>

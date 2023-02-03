@@ -64,7 +64,8 @@ const NavBar = () => {
             <Navbar.Brand as={Link} to="/" className={classes.navBarBrand}>
               <img src={logo} className={classes.navBarLogo} alt="Nouns DAO logo" />
             </Navbar.Brand>
-            {Number(CHAIN_ID) !== 1 && (
+            {/* {Number(CHAIN_ID) !== 1 && ( */}
+            {Number(CHAIN_ID) !== 31337 && (
               <Nav.Item>
                 <img className={classes.testnetImg} src={testnetNoun} alt="testnet noun" />
                 TESTNET
@@ -73,9 +74,10 @@ const NavBar = () => {
             <Nav.Item>
               {treasuryBalance && (
                 <Nav.Link
-                  href={daoEtherscanLink}
+                  // href={daoEtherscanLink}
+                  href="/"
                   className={classes.nounsNavLink}
-                  target="_blank"
+                  // target="_blank"
                   rel="noreferrer"
                 >
                   <NavBarTreasury
@@ -100,9 +102,10 @@ const NavBar = () => {
               />
             </Nav.Link>
             <Nav.Link
-              href={externalURL(ExternalURL.nounsCenter)}
+              // href={externalURL(ExternalURL.nounsCenter)}
+              href="/"
               className={classes.nounsNavLink}
-              target="_blank"
+              // target="_blank"
               rel="noreferrer"
               onClick={closeNav}
             >
@@ -113,9 +116,10 @@ const NavBar = () => {
               />
             </Nav.Link>
             <Nav.Link
-              href={externalURL(ExternalURL.discourse)}
+              // href={externalURL(ExternalURL.discourse)}
+              href="/"
               className={classes.nounsNavLink}
-              target="_blank"
+              // target="_blank"
               rel="noreferrer"
               onClick={closeNav}
             >

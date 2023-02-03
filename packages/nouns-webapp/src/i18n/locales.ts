@@ -4,7 +4,7 @@ import ja from 'dayjs/locale/ja';
 export const SUPPORTED_LOCALES = [
   // order as they appear in the language dropdown
   'en-US',
-  'ja-JP',
+  // 'ja-JP',
 ];
 export type SupportedLocale = typeof SUPPORTED_LOCALES[number] | 'pseudo';
 

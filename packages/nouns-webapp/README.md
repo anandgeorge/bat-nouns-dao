@@ -9,6 +9,10 @@ _From the base of the `nouns-monorepo`_
 In the first shell:
 
 ```sh
+nvm use 14.15.0
+```
+
+```sh
 # Install all dependencies and build contract artifacts
 yarn
 # Switch to nouns-contracts

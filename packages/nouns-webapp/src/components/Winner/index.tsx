@@ -39,7 +39,7 @@ const Winner: React.FC<WinnerProps> = props => {
           <Trans>You</Trans>
         </h2>
       </Col>
-      {!isMobile && (
+      {/* {!isMobile && (
         <Col>
           <a
             href="https://nouns.center/groups"
@@ -62,7 +62,7 @@ const Winner: React.FC<WinnerProps> = props => {
             </Button>
           </a>
         </Col>
-      )}
+      )} */}
     </Row>
   ) : (
     <ShortAddress size={40} address={winner} avatar={true} />
