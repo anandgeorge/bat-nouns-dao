@@ -242,7 +242,7 @@ const Bid: React.FC<{
 
   const fomoNounsBtnOnClickHandler = () => {
     // Open Fomo Nouns in a new tab
-    window.open('https://fomonouns.wtf', '_blank')?.focus();
+    // window.open('https://fomonouns.wtf', '_blank')?.focus();
   };
 
   const isWalletConnected = activeAccount !== undefined;
