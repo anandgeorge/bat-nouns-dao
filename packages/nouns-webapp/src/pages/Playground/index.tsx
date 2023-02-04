@@ -35,7 +35,8 @@ interface PendingCustomTrait {
 const nounsProtocolLink = (
   <Link
     text={<Trans>Nouns Protocol</Trans>}
-    url="https://www.notion.so/Noun-Protocol-32e4f0bf74fe433e927e2ea35e52a507"
+    // url="https://www.notion.so/Noun-Protocol-32e4f0bf74fe433e927e2ea35e52a507"
+    url="https://bat-dao.notion.site/Nouns-Protocol-f129081e6bd44e478a40cd690950d807"
     leavesPage={true}
   />
 );
@@ -43,7 +44,7 @@ const nounsProtocolLink = (
 const nounsAssetsLink = (
   <Link
     text="nouns-assets"
-    url="https://github.com/nounsDAO/nouns-monorepo/tree/master/packages/nouns-assets"
+    url="https://github.com/anandgeorge/bat-nouns-dao/tree/master/packages/nouns-assets"
     leavesPage={true}
   />
 );
@@ -51,7 +52,7 @@ const nounsAssetsLink = (
 const nounsSDKLink = (
   <Link
     text="nouns-sdk"
-    url="https://github.com/nounsDAO/nouns-monorepo/tree/master/packages/nouns-sdk"
+    url="https://github.com/anandgeorge/bat-nouns-dao/tree/master/packages/nouns-sdk"
     leavesPage={true}
   />
 );
@@ -279,16 +280,6 @@ const Playground: React.FC = () => {
         </Row>
         <Row>
           <Col lg={3}>
-            <Col lg={12}>
-              <Button
-                onClick={() => {
-                  generateNounSvg();
-                }}
-                className={classes.primaryBtn}
-              >
-                <Trans>Generate Nouns</Trans>
-              </Button>
-            </Col>
             <Row>
               {traits &&
                 traits.map((trait, index) => {
@@ -379,6 +370,16 @@ const Playground: React.FC = () => {
                 worth of Nouns
               </Trans>
             </p>
+            <Col lg={12}>
+              <Button
+                onClick={() => {
+                  generateNounSvg();
+                }}
+                className={classes.primaryBtn}
+              >
+                <Trans>Generate Nouns</Trans>
+              </Button>
+            </Col>
           </Col>
           <Col lg={9}>
             <Row>
